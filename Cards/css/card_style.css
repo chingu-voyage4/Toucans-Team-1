@@ -1,0 +1,22 @@
+* {
+    /border: 1px solid red;
+}
+
+body {
+    background-color: #50C9CE;
+}
+
+.card-block h4{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    border-width: 0px;
+    border-radius: 0px;
+    background-color: #2E382E;
+}
+
+.custom-card {
+    padding: 15px 0px;
+}
