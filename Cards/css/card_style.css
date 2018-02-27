@@ -1,22 +1,51 @@
 * {
     /border: 1px solid red;
+    font-family: 'Varela Round', sans-serif;
 }
 
 body {
-    background-color: #50C9CE;
-}
-
-.card-block h4{
-    margin: 0px;
-    padding: 0px;
+    background-color: #90AFC5;
 }
 
 .card {
     border-width: 0px;
     border-radius: 0px;
-    background-color: #2E382E;
+    background-color: #336B87;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 10px 20px -6px black;
+    -moz-box-shadow: 0 10px 20px -6px black;
+    box-shadow: 0 10px 20px -6px black;
+    padding-bottom: 10px;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .custom-card {
     padding: 15px 0px;
+}
+
+
+.card-block h4{
+    margin: 0px;
+    padding: 5px 5px 0px 5px;
+    font-size: 17px;
+    line-height: inherit;
+}
+
+.card-block h5{
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    font-size: 15px;
+}
+
+.card-footer {
+  background-color: none;
+}
+
+
+.fa-star {
+  color: white;
 }
