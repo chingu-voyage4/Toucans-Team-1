@@ -1,19 +1,31 @@
-/*CARDS*/
 
-
+/*BASIC MARKUP*/
 * {
-    /border: 1px solid red;
+    /border: 1px solid red; /*Use when you need to check spacing*/
     font-family: 'Varela Round', sans-serif;
 }
 
-body {
-    background-color: #90AFC5;
+/*collor pallete*/
+:root{
+	--color1: #4f8aa8;
+	--color2: #f3e3b4;
+	--color3: #2a4a5a;
+	--color4: #5c849a;
+	--color5: #545456;
+}
+
+
+
+/*CARDS*/
+
+.cards-section {
+    background-color: var(--color1);
 }
 
 .card {
     border-width: 0px;
     border-radius: 0px;
-    background-color: #336B87;
+    background-color: var(--color3);
     border-radius: 15px;
     -webkit-box-shadow: 0 10px 20px -6px black;
     -moz-box-shadow: 0 10px 20px -6px black;
@@ -29,7 +41,6 @@ body {
 .custom-card {
     padding: 15px 0px;
 }
-
 
 .card-block h4{
     margin: 0px;
@@ -48,7 +59,6 @@ body {
   background-color: none;
 }
 
-
 .fa-star {
   color: white;
 }
@@ -56,77 +66,45 @@ body {
 
 
 
-
-
-
-
 /*FOOTER*/
-
-:root{
-	--color1: #4f8aa8;
-	--color2: #f3e3b4;
-	--color3: #2a4a5a;
-	--color4: #5c849a;
-	--color5: #545456;
-}
-
-
-
 
 footer{
 	background-color: var(--color2);
 	color: var(--color5);
 }
 
-footer h3{
+.about h3{
+  padding-top: 50px;
 	letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.about p {
+  padding-bottom: 30px;
 }
 
 .person {
-    border: 0;
-
-    margin-bottom: 25px;
-    width: 70%;
-    height: 70%;
+    border: 0px;
     opacity: 0.7;
+    width: 200px;
+    height: 200px;
 }
 .person:hover {
-    border-color: ;
     box-shadow: 0 0 20px 10px var(--color3);
 }
 
-.fa:hover .nickname{
-	visibility: visible;
+.profile-containers {
+  padding-bottom: 50px;
 }
 
-footer ul {
-	position: absolute;
-	padding-left: 80%;
-	top: 25%;
-	list-style: none
+.coder-profile {
+  padding: 10px 10px 50px 10px;
 }
 
-footer li {
-	text-align: left;
-	margin-top: 0;
-	letter-spacing:2px;
-	padding-bottom: 0.5em;
-}
-
-footer .fa{
-	font-size: 150%;
-	
-}
-
-.nickname {
-	visibility: hidden;
-	font-size: 50%;
-}
-
-footer a{
+.footer a{
 	color: var(--color3);
 }
 
-footer a:hover{
+.footer a:hover{
 	color: var(--color1);
 }
