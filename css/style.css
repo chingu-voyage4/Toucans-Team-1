@@ -1,1 +1,68 @@
+:root{
+	--color1: #4f8aa8;
+	--color2: #f3e3b4;
+	--color3: #2a4a5a;
+	--color4: #5c849a;
+	--color5: #545456;
+}
 
+
+
+
+footer{
+	background-color: var(--color2);
+	color: var(--color5);
+}
+
+footer h3{
+	letter-spacing: 3px;
+}
+
+.person {
+    border: 0;
+
+    margin-bottom: 25px;
+    width: 70%;
+    height: 70%;
+    opacity: 0.7;
+}
+.person:hover {
+    border-color: ;
+    box-shadow: 0 0 20px 10px var(--color3);
+}
+
+.fa:hover .nickname{
+	visibility: visible;
+}
+
+footer ul {
+	position: absolute;
+	padding-left: 80%;
+	top: 25%;
+	list-style: none
+}
+
+footer li {
+	text-align: left;
+	margin-top: 0;
+	letter-spacing:2px;
+	padding-bottom: 0.5em;
+}
+
+footer .fa{
+	font-size: 150%;
+	
+}
+
+.nickname {
+	visibility: hidden;
+	font-size: 50%;
+}
+
+footer a{
+	color: var(--color3);
+}
+
+footer a:hover{
+	color: var(--color1);
+}
