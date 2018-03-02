@@ -68,14 +68,14 @@
 
 
 /*MODALS*/
-#cardsModal {
+.card-img-top {
     cursor: pointer;
     transition: 0.3s;
 }
 
-#cardsModal:hover {
+.card-img-top:hover {
   opacity: 0.5;
-  color: var(--color2);
+  /color: var(--color2);
 }
 
 /* The Modal (background) */

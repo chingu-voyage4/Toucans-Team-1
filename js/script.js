@@ -1,15 +1,17 @@
 
-// Get the modal
 
-var modal = document.getElementById('cardsModal1');
+// Get the modal
+var modal = document.getElementById('cardsModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var allImages = document.getElementsByTagName('img');
+var allImages = document.getElementsByClassName('card-img-top');
 var modalImg = document.getElementById("img01");
+var modalText = document.getElementsByClassName("modal-content-info");
 for( let i = 0 ; i < allImages.length; i ++ ){
   allImages[i].addEventListener('click', () => {
    modal.style.display = 'block';
-   modalImg.src = this.src;
+   modalImg.src = allImages[i].src;
+   modalText.innerHTML = bookDescription[i];
 })
 }
 
