@@ -62,9 +62,6 @@
   background-color: none;
 }
 
-.fa-star {
-  color: white;
-}
 
 
 /*MODALS*/
@@ -123,12 +120,16 @@
     animation-duration: 0.5s;
 }
 
-.modal-content-info {
+.modal-content-text, .rating, .modal-icons, .buy-on-amazon {
   color: white;
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 1.2s;
   animation-name: zoom;
   animation-duration: 1.2s;
+}
+
+.fa-star {
+  color: white;
 }
 
 @-webkit-keyframes zoom {
