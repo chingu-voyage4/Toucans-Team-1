@@ -21,7 +21,14 @@ let bookIcons = ['<i class="devicon-css3-plain colored"></i><i class="devicon-ht
 '<i class="devicon-nodejs-plain-wordmark colored fa-2x"></i><i class="devicon-express-original colored fa-2x"></i>'];
 
 let bookAmazon = ['https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/ref=sr_1_3?ie=UTF8&qid=1520282883&sr=8-3&keywords=html+css&dpID=41R9Qctt%252BbL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch',
-'https://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_3?s=books&ie=UTF8&qid=1520283203&sr=1-3&keywords=javascript+and+jquery&dpID=41Z6LTD8QmL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch']
+'https://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_3?s=books&ie=UTF8&qid=1520283203&sr=1-3&keywords=javascript+and+jquery&dpID=41Z6LTD8QmL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch',
+'https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/ref=sr_1_1?s=books&ie=UTF8&qid=1520369330&sr=1-1&keywords=javascript+up',
+'https://www.amazon.com/Front-End-Web-Development-Ranch-Guides/dp/0134433947/ref=sr_1_1?ie=UTF8&qid=1520369421&sr=8-1&keywords=Front-End+Web+Development%3A+The+Big+Nerd+Ranch+Guide',
+'https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1520369451&sr=1-1&keywords=JavaScript%3A+The+Good+Parts',
+'https://www.amazon.com/JavaScript-Advanced-Programming-Language-Computer/dp/154305501X/ref=sr_1_1?s=books&ie=UTF8&qid=1520369478&sr=1-1&keywords=JavaScript%3A+Advanced+Guide+to+Programming+Code+with+JavaScript',
+'https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036/ref=sr_1_4?s=books&ie=UTF8&qid=1520369509&sr=1-4&keywords=Python+Crash+Course&dpID=51PZ6YIfe9L&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch',
+'https://www.amazon.com/Automate-Boring-Stuff-Python-Programming/dp/1593275994/ref=sr_1_1?s=books&ie=UTF8&qid=1520369538&sr=1-1&keywords=Automate+the+Boring+Stuff+with+Python',
+'https://www.amazon.com/Web-Development-Node-Express-Leveraging/dp/1491949309/ref=sr_1_1?s=books&ie=UTF8&qid=1520369563&sr=1-1&keywords=Web+Development+with+Node+and+Express&dpID=51-U0v0J8DL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch']
 
 // Get the modal
 var modal = document.getElementById('cardsModal');
@@ -31,14 +38,14 @@ var allImages = document.getElementsByClassName('card-img-top');
 var modalImg = document.getElementById("image-modal");
 var modalText = document.getElementsByClassName("modal-content-text");
 var modalIcons = document.getElementsByClassName("modal-icons");
-var modalAmazonLink = document.getElementById("link-to-amazon").getAttribute("href");
+var modalAmazonLink = document.getElementById("link-to-amazon");
 for( let i = 0 ; i < allImages.length; i ++ ){
   allImages[i].addEventListener('click', () => {
    modal.style.display = 'block';
    modalImg.src = allImages[i].src;
    modalText[0].textContent = bookDescription[i];
    modalIcons[0].innerHTML = bookIcons[i];
-   modalAmazonLink[0].textContent = bookAmazon[i];
+   modalAmazonLink.href = bookAmazon[i];
 })
 }
 
