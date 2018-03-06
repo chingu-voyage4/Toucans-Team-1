@@ -6,7 +6,7 @@ https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 and latest FontAwesome:
 https://fontawesome.com/get-started
-<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
 
 For modal icons(programming languages icons) we use DEVICON:
 http://konpa.github.io/devicon/
