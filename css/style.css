@@ -15,7 +15,10 @@
 }
 
 /*Navbar*/
-
+.navBar{
+  background-color: var(--color2);
+  padding-bottom: 20px; 
+}
 
 /*CARDS*/
 
