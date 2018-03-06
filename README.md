@@ -8,13 +8,10 @@ and latest FontAwesome:
 https://fontawesome.com/get-started
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+For modal icons(programming languages icons) we use DEVICON:
+ <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 
-22.02.2018
+ 
 
-I have created development branch aand I set it as default branch.
-Under "Insights > Network" you can see the commits path.
 
-27.02.2018
-
-@taseamuemils Created basic tamplate for cards section.
