@@ -120,6 +120,27 @@
     animation-duration: 0.5s;
 }
 
+.modal-content-text {
+  padding: 10px 0px;
+}
+
+.rating {
+  padding: 10px 0px;
+}
+
+.buy-on-amazon {
+  background-color: var(--color2);
+  color: var(--color3) !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.buy-on-amazon:hover {
+  background-color: var(--color4);
+  color: var(--color2) !important;
+  font-weight: bold;
+}
+
 .modal-content-text, .rating, .modal-icons, .buy-on-amazon {
   color: white;
   -webkit-animation-name: zoom;
