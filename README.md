@@ -9,7 +9,8 @@ https://fontawesome.com/get-started
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 For modal icons(programming languages icons) we use DEVICON:
- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+http://konpa.github.io/devicon/
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 
  
