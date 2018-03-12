@@ -14,6 +14,22 @@
 	--color5: #545456;
 }
 
+.resource-section {
+  font-size: 20px;
+  padding: 15px 0px;
+}
+
+.resource-section a {
+  color: var(--color2);
+  background-color: var(--color3);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.resource-section a:hover {
+  text-decoration: none;
+}
 
 
 /*CARDS*/
@@ -80,7 +96,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 70px; /* Location of the box */
+    padding-top: 50px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -100,17 +116,6 @@
 }
 
 
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
 
 /* Add Animation */
 .modal-content {
@@ -141,7 +146,7 @@
   font-weight: bold;
 }
 
-.modal-content-text, .rating, .modal-icons, .buy-on-amazon {
+.modal-content-text, .rating, .modal-icons, .buy-on-amazon, .modal-content-title {
   color: white;
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 1.2s;
@@ -150,8 +155,9 @@
 }
 
 .fa-star {
-  color: white;
+  color: var(--color2);
 }
+
 
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
@@ -168,7 +174,7 @@
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: var(--color2);
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
