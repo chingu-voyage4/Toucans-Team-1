@@ -16,9 +16,28 @@
 
 /*Navbar*/
 .navBar{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 3px;
   background-color: var(--color2);
   padding-bottom: 20px; 
 }
+/*Content-Section start*/
+.headerIntro{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.moreContent{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+/*Content Section end*/
+
 .resource-section {
   font-size: 20px;
   padding: 15px 0px;
@@ -93,7 +112,7 @@
 
 .card-img-top:hover {
   opacity: 0.5;
-  /color: var(--color2);
+  color: var(--color2);
 }
 
 /* The Modal (background) */
