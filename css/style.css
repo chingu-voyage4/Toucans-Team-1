@@ -1,0 +1,269 @@
+
+/*BASIC MARKUP*/
+* {
+    /border: 1px solid red; /*Use when you need to check spacing*/
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*collor pallete*/
+:root{
+	--color1: #4f8aa8;
+	--color2: #f3e3b4;
+	--color3: #2a4a5a;
+	--color4: #5c849a;
+	--color5: #545456;
+}
+
+.resource-section {
+  font-size: 20px;
+  padding: 15px 0px;
+}
+
+.resource-section a {
+  color: var(--color2);
+  background-color: var(--color3);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.resource-section a:hover {
+  text-decoration: none;
+}
+
+
+/*CARDS*/
+
+.cards-section {
+    background-color: var(--color1);
+}
+
+.card {
+    border-width: 0px;
+    border-radius: 0px;
+    background-color: var(--color3);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 10px 20px -6px black;
+    -moz-box-shadow: 0 10px 20px -6px black;
+    box-shadow: 0 10px 20px -6px black;
+    padding-bottom: 10px;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 10px 20px -6px black;
+}
+
+.custom-card {
+    padding: 15px 0px;
+}
+
+.card-block h4{
+    margin: 0px;
+    padding: 20px 5px 0px 5px;
+    font-size: 17px;
+    line-height: inherit;
+}
+
+.card-block h5{
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    font-size: 15px;
+}
+
+.card-footer {
+  background-color: none;
+}
+
+/*STARS*/
+.stars-empty {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.stars-empty::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.stars-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-family: FontAwesome;
+}
+ 
+.stars-full::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+
+}
+
+/*MODALS*/
+.card-img-top {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-img-top:hover {
+  opacity: 0.5;
+  /color: var(--color2);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    padding: 0px;
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 700px;
+}
+
+
+
+/* Add Animation */
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+.modal-content-text {
+  padding: 10px 0px;
+}
+
+.rating {
+  padding: 10px 0px;
+}
+
+.buy-on-amazon {
+  background-color: var(--color2);
+  color: var(--color3) !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.buy-on-amazon:hover {
+  background-color: var(--color4);
+  color: var(--color2) !important;
+  font-weight: bold;
+}
+
+.modal-content-text, .rating, .modal-icons, .buy-on-amazon, .modal-content-title {
+  color: white;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 1.2s;
+  animation-name: zoom;
+  animation-duration: 1.2s;
+}
+
+.fa-star {
+  color: var(--color2);
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--color2);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+/*FOOTER*/
+
+footer{
+	background-color: var(--color2);
+	color: var(--color5);
+}
+
+.about h3{
+  padding-top: 50px;
+	letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.about p {
+  padding-bottom: 30px;
+}
+
+.person {
+    border: 0px;
+    opacity: 0.7;
+    width: 200px;
+    height: 200px;
+}
+.person:hover {
+    box-shadow: 0 0 20px 10px var(--color3);
+}
+
+.profile-containers {
+  padding-bottom: 50px;
+}
+
+.coder-profile {
+  padding: 10px 10px 50px 10px;
+}
+
+.footer a{
+	color: var(--color3);
+}
+
+.footer a:hover{
+	color: var(--color1);
+}
