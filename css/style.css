@@ -14,26 +14,23 @@
 	--color5: #545456;
 }
 
+body{
+    padding-top:70px ;
+}
 /*Navbar*/
-.navBar{
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 3px;
-  background-color: var(--color2);
-  padding-bottom: 20px; 
+.navbar{
+    background-color: var(--color2);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
 }
 /*Content-Section start*/
 .headerIntro{
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  
 }
 
 .moreContent{
-  display:grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  
 }
 
 /*Content Section end*/
