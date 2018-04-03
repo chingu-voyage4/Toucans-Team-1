@@ -11,7 +11,8 @@
 	--color2: #f3e3b4;
 	--color3: #2a4a5a;
 	--color4: #5c849a;
-	--color5: #545456;
+    --color5: #545456;
+    --color6: #f9fbfc;
 }
 
 body{
@@ -19,10 +20,13 @@ body{
 }
 /*Navbar*/
 .navbar{
-    background-color: var(--color2);
+   
+    background-color: var(--color6);
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-weight: bold;
+    mix-blend-mode: difference;
+    z-index: 1
 }
 /*Content-Section start*/
 .headerIntro{
