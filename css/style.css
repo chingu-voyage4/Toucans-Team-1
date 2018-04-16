@@ -1,7 +1,7 @@
 
 /*BASIC MARKUP*/
 * {
-    /*border: 1px solid red; /*Use when you need to check spacing*/
+    /border: 1px solid red; /*Use when you need to check spacing*/
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -16,29 +16,29 @@
 }
 
 body{
-    padding-top:135px ;
+    //padding-top:135px ;
 }
 /*Navbar*/
 .navbar{
-   
+
     background-color: var(--color6);
     padding: 10px 20px;
-    border-radius: 25px;
+    /border-radius: 25px;
     font-weight: bold;
-    mix-blend-mode: difference;
-    z-index: auto;
+    //mix-blend-mode: difference;
+    //z-index: inherit;
 }
 /*Content-Section start*/
-/*.headerIntro{
-  
+.headerIntro{
+  padding: 20px 40px;
 }
 
-.moreContent{
-  
+.headerIntro p {
+  padding: 20px 20px;
+  font-size: 22px;
 }
 
 /*Content Section end*/
-*/
 .resource-section {
   font-size: 20px;
   padding: 15px 0px;
@@ -60,7 +60,8 @@ body{
 /*CARDS*/
 
 .cards-section {
-    background-color: var(--color1);
+  padding: 40px 0px 40px 0px;
+  background-color: var(--color1);
 }
 
 .card {
@@ -108,7 +109,7 @@ body{
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-  
+
   font-size: 1.5em;
   color: white;
   letter-spacing: 3px;
@@ -117,7 +118,7 @@ body{
 .stars-empty::before {
   content: "\f006 \f006 \f006 \f006 \f006";
 }
- 
+
 .stars-full {
   position: absolute;
   top: 0;
@@ -127,7 +128,7 @@ body{
   width: 0;
   font-family: FontAwesome;
 }
- 
+
 .stars-full::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
@@ -216,13 +217,13 @@ body{
 .rating-stars ul {
   list-style-type:none;
   padding:0;
-  
+
   -moz-user-select:none;
   -webkit-user-select:none;
 }
 .rating-stars ul > li.star {
   display:inline-block;
-  
+
 }
 
 /* Idle State of the stars */
@@ -281,12 +282,13 @@ body{
 /*FOOTER*/
 
 footer{
+  padding-top: 100px;
 	background-color: var(--color2);
 	color: var(--color5);
 }
 
 .about h3{
-  padding-top: 50px;
+  padding-top: px;
 	letter-spacing: 3px;
   font-weight: bolder;
 }
@@ -310,7 +312,7 @@ footer{
 }
 
 .coder-profile {
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 100px 10px;
 }
 
 .footer a{
