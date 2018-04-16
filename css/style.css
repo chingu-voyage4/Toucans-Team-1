@@ -103,7 +103,36 @@ body{
   background-color: none;
 }
 
+/*STARS*/
+.stars-empty {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 3px;
+}
 
+.stars-empty::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+ 
+.stars-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-family: FontAwesome;
+}
+ 
+.stars-full::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+
+}
 
 /*MODALS*/
 .card-img-top {
@@ -183,6 +212,34 @@ body{
   color: var(--color2);
 }
 
+/*Rating-stars*/
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa{
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
 
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
