@@ -1,44 +1,47 @@
-
 /*BASIC MARKUP*/
+
 * {
-    /*border: 1px solid red; /*Use when you need to check spacing*/
-    font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 /*color pallete*/
-:root{
-	--color1: #4f8aa8;
-	--color2: #f3e3b4;
-	--color3: #2a4a5a;
-	--color4: #5c849a;
-    --color5: #545456;
-    --color6: #f9fbfc;
+
+:root {
+  --color1: #4f8aa8;
+  --color2: #f3e3b4;
+  --color3: #2a4a5a;
+  --color4: #5c849a;
+  --color5: #545456;
+  --color6: #f9fbfc;
 }
 
-body{
-    padding-top:135px ;
+body {
+  //padding-top:135px ;
 }
+
 /*Navbar*/
-.navbar{
-   
-    background-color: var(--color6);
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    mix-blend-mode: difference;
-    z-index: auto;
-}
-/*Content-Section start*/
-/*.headerIntro{
-  
+
+.navbar {
+  background-color: var(--color6);
+  padding: 10px 20px;
+  /border-radius: 25px;
+  font-weight: bold; //mix-blend-mode: difference;
+  //z-index: inherit;
 }
 
-.moreContent{
-  
+/*Content-Section start*/
+
+.headerIntro {
+  padding: 20px 40px;
+}
+
+.headerIntro p {
+  padding: 20px 20px;
+  font-size: 22px;
 }
 
 /*Content Section end*/
-*/
+
 .resource-section {
   font-size: 20px;
   padding: 15px 0px;
@@ -56,22 +59,22 @@ body{
   text-decoration: none;
 }
 
-
 /*CARDS*/
 
 .cards-section {
-    background-color: var(--color1);
+  padding: 40px 0px 40px 0px;
+  background-color: var(--color1);
 }
 
 .card {
-    border-width: 0px;
-    border-radius: 0px;
-    background-color: var(--color3);
-    border-radius: 15px;
-    -webkit-box-shadow: 0 10px 20px -6px black;
-    -moz-box-shadow: 0 10px 20px -6px black;
-    box-shadow: 0 10px 20px -6px black;
-    padding-bottom: 10px;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: var(--color3);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 20px -6px black;
+  -moz-box-shadow: 0 10px 20px -6px black;
+  box-shadow: 0 10px 20px -6px black;
+  padding-bottom: 10px;
 }
 
 .card img {
@@ -83,20 +86,20 @@ body{
 }
 
 .custom-card {
-    padding: 15px 0px;
+  padding: 15px 0px;
 }
 
-.card-block h4{
-    margin: 0px;
-    padding: 20px 5px 0px 5px;
-    font-size: 17px;
-    line-height: inherit;
+.card-block h4 {
+  margin: 0px;
+  padding: 20px 5px 0px 5px;
+  font-size: 17px;
+  line-height: inherit;
 }
 
-.card-block h5{
-    margin: 0px;
-    padding: 5px 0px 5px 0px;
-    font-size: 15px;
+.card-block h5 {
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+  font-size: 15px;
 }
 
 .card-footer {
@@ -104,11 +107,11 @@ body{
 }
 
 /*STARS*/
+
 .stars-empty {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-  
   font-size: 1.5em;
   color: white;
   letter-spacing: 3px;
@@ -117,7 +120,7 @@ body{
 .stars-empty::before {
   content: "\f006 \f006 \f006 \f006 \f006";
 }
- 
+
 .stars-full {
   position: absolute;
   top: 0;
@@ -127,17 +130,17 @@ body{
   width: 0;
   font-family: FontAwesome;
 }
- 
+
 .stars-full::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
-
 }
 
 /*MODALS*/
+
 .card-img-top {
-    cursor: pointer;
-    transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .card-img-top:hover {
@@ -146,37 +149,47 @@ body{
 }
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
+
 .modal-content {
-    padding: 0px;
-    margin: auto;
-    display: block;
-    width: 50%;
-    max-width: 700px;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 700px;
 }
 
-
-
 /* Add Animation */
+
 .modal-content {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.5s;
-    animation-name: zoom;
-    animation-duration: 0.5s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: zoom;
+  animation-duration: 0.5s;
 }
 
 .modal-content-text {
@@ -213,81 +226,94 @@ body{
 }
 
 /*Rating-stars*/
+
 .rating-stars ul {
-  list-style-type:none;
-  padding:0;
-  
-  -moz-user-select:none;
-  -webkit-user-select:none;
+  list-style-type: none;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
-.rating-stars ul > li.star {
-  display:inline-block;
-  
+
+.rating-stars ul>li.star {
+  display: inline-block;
 }
 
 /* Idle State of the stars */
-.rating-stars ul > li.star > i.fa {
-  font-size:2.5em; /* Change the size of the stars */
-  color:#ccc; /* Color on idle state */
+
+.rating-stars ul>li.star>i.fa {
+  font-size: 2.5em;
+  /* Change the size of the stars */
+  color: #ccc;
+  /* Color on idle state */
 }
 
 /* Hover state of the stars */
-.rating-stars ul > li.star.hover > i.fa{
-  color:#FFCC36;
+
+.rating-stars ul>li.star.hover>i.fa {
+  color: #FFCC36;
 }
 
 /* Selected state of the stars */
-.rating-stars ul > li.star.selected > i.fa {
-  color:#FF912C;
+
+.rating-stars ul>li.star.selected>i.fa {
+  color: #FF912C;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
+
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: var(--color2);
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--color2);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
-
-
 
 /*FOOTER*/
 
-footer{
-	background-color: var(--color2);
-	color: var(--color5);
+footer {
+  padding-top: 100px;
+  background-color: var(--color2);
+  color: var(--color5);
 }
 
-.about h3{
-  padding-top: 50px;
-	letter-spacing: 3px;
+.about h3 {
+  padding-top: px;
+  letter-spacing: 3px;
   font-weight: bolder;
 }
 
@@ -296,13 +322,14 @@ footer{
 }
 
 .person {
-    border: 0px;
-    opacity: 0.7;
-    width: 200px;
-    height: 200px;
+  border: 0px;
+  opacity: 0.7;
+  width: 200px;
+  height: 200px;
 }
+
 .person:hover {
-    box-shadow: 0 0 20px 10px var(--color3);
+  box-shadow: 0 0 5px 5px var(--color3);
 }
 
 .profile-containers {
@@ -310,13 +337,13 @@ footer{
 }
 
 .coder-profile {
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 100px 10px;
 }
 
-.footer a{
-	color: var(--color3);
+.footer a {
+  color: var(--color3);
 }
 
-.footer a:hover{
-	color: var(--color1);
+.footer a:hover {
+  color: var(--color1);
 }
