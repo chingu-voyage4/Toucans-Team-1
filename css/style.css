@@ -1,7 +1,7 @@
 
 /*BASIC MARKUP*/
 * {
-    /border: 1px solid red; /*Use when you need to check spacing*/
+    /*border: 1px solid red; /*Use when you need to check spacing*/
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -15,18 +15,19 @@
     --color6: #f9fbfc;
 }
 
-body{
-    //padding-top:135px ;
-}
+/*.body{
+    /*padding-top:135px ;
+}*/
+
 /*Navbar*/
 .navbar{
 
     background-color: var(--color6);
     padding: 10px 20px;
-    /border-radius: 25px;
+    /*border-radius: 25px;*/
     font-weight: bold;
-    //mix-blend-mode: difference;
-    //z-index: inherit;
+    /*mix-blend-mode: difference;
+    z-index: inherit;*/
 }
 /*Content-Section start*/
 .headerIntro{
@@ -220,6 +221,7 @@ body{
 
   -moz-user-select:none;
   -webkit-user-select:none;
+   user-select: none;
 }
 .rating-stars ul > li.star {
   display:inline-block;
