@@ -1,7 +1,10 @@
 /*BASIC MARKUP*/
 
 * {
-  font-family: 'Varela Round', sans-serif;
+    /*border: 1px solid red; /*Use when you need to check spacing*/
+    font-family: 'Varela Round', sans-serif;
+  
+
 }
 
 /*color pallete*/
@@ -15,18 +18,22 @@
   --color6: #f9fbfc;
 }
 
-body {
-  //padding-top:135px ;
-}
+
+/*.body{
+    /*padding-top:135px ;
+}*/
+
 
 /*Navbar*/
 
-.navbar {
-  background-color: var(--color6);
-  padding: 10px 20px;
-  /border-radius: 25px;
-  font-weight: bold; //mix-blend-mode: difference;
-  //z-index: inherit;
+   .navbar {
+    background-color: var(--color6);
+    padding: 10px 20px;
+    /*border-radius: 25px;*/
+    font-weight: bold;
+    /*mix-blend-mode: difference;
+     z-index: inherit;*/}
+
 }
 
 /*Content-Section start*/
@@ -227,11 +234,14 @@ body {
 
 /*Rating-stars*/
 
+
 .rating-stars ul {
   list-style-type: none;
   padding: 0;
   -moz-user-select: none;
   -webkit-user-select: none;
+  user-select: none;
+
 }
 
 .rating-stars ul>li.star {
